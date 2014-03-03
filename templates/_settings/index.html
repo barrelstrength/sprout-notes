@@ -1,0 +1,32 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+  label: "Heading"|t,
+  id: 'heading',
+  name: 'heading',
+  value: (settings.heading is defined) ? settings.heading : '',
+  errors: (settings.heading is defined) ? settings.getErrors('heading') : ''  
+}) }}
+
+{{ forms.textareaField({
+  label: "Notes"|t,
+  id: 'notes',
+  class: 'sprout-notes redactor',
+  name: 'notes',
+  value: (settings.notes is defined) ? settings.notes : '',
+  errors: (settings.notes is defined) ? settings.getErrors('notes') : ''  
+}) }}
+
+{{ forms.selectField({
+  label: "Output As"|t,
+  id: 'output',
+  name: 'output',
+  options: options.output,
+  value: (settings.output is defined) ? settings.output : '',
+}) }}
+
+<style type="text/css">
+  textarea.text.sprout-notes {
+    min-height: 300px;
+  }
+</style>
