@@ -6,7 +6,7 @@
     <property name="pluginName" value="sproutnotes" />
     <property name="pluginVersion" value="0.6.0" />
 
-    <target name="release" depends="build">
+    <target name="release">
         <echo msg="Preparing release distro..." />
         <zip destfile="${pluginFileName}-${pluginVersion}.zip">
             <fileset dir="../../">
