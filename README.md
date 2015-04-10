@@ -14,13 +14,6 @@ Sprout Notes Updates
 http://sprout.barrelstrengthdesign.com/craft-plugins/notes/updates
 
 
-Sprout Notes Translations
-------------------------------------------------------------
-A default translation file is provided on GitHub and can be modified 
-as needed for your language requirements.
-https://github.com/BarrelStrength/Craft-SproutNotes/blob/master/translations/en_us.php
-
-
 Sprout Notes Support
 ------------------------------------------------------------
 
