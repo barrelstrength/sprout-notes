@@ -35,7 +35,7 @@ class SproutNotesPlugin extends BasePlugin
 
 	public function getReleaseFeedUrl()
 	{
-	  return 'http://sprout.barrelstrengthdesign.com/craft-plugins/notes/releases.json';
+	  return 'https://sprout.barrelstrengthdesign.com/craft-plugins/notes/releases.json';
 	}
 
 	public function hasCpSection()
