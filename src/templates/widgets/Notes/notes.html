@@ -1,0 +1,6 @@
+
+{% if widget.output == 'html' %}
+  {{ widget.notes | raw }}
+{% else %}
+  {{ widget.notes | markdown }}
+{% endif %}

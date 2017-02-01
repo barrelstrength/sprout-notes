@@ -1,9 +1,0 @@
-
-{% if settings.output == 'html' %}
-	{{ settings.notes | raw }}
-{% else %}
-  {{ settings.notes | markdown }}
-{% endif %}
-
-
-
