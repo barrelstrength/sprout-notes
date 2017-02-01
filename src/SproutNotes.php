@@ -10,23 +10,21 @@ use barrelstrength\sproutnotes\widgets\Notes as NotesWidget;
 
 class SproutNotes extends \craft\base\Plugin
 {
-		/**
-		 * Enable use of SproutNotes::$plugin-> in place of Craft::$app->
-		 * 
-		 * @var [type]
-		 */
-		public static $plugin;
+	/**
+	 * Enable use of SproutNotes::$plugin-> in place of Craft::$app->
+	 *
+	 * @var [type]
+	 */
+	public static $plugin;
 
-    public function init()
-    {
-        parent::init();
+	public function init()
+	{
+		parent::init();
 
-        self::$plugin = $this;
+		self::$plugin = $this;
 
-        Event::on(Dashboard::class, Dashboard::EVENT_REGISTER_WIDGET_TYPES, function(RegisterComponentTypesEvent $event) {
-            $event->types[] = NotesWidget::class;
-        });
-
-        
-    }
+		Event::on(Dashboard::class, Dashboard::EVENT_REGISTER_WIDGET_TYPES, function(RegisterComponentTypesEvent $event) {
+			$event->types[] = NotesWidget::class;
+		});
+	}
 }
