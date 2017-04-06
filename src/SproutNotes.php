@@ -1,7 +1,6 @@
 <?php
 namespace barrelstrength\sproutnotes;
 
-use Craft;
 use yii\base\Event;
 use craft\events\RegisterComponentTypesEvent;
 use craft\services\Dashboard;
