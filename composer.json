@@ -1,0 +1,23 @@
+{
+  "name": "barrelstrength/sproutnotes",
+  "description": "Sometimes you just need to write a note!",
+  "version": "2.0.0",
+  "type": "craft-plugin",
+  "autoload": {
+    "psr-4": {
+      "barrelstrength\\sproutnotes\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Sprout Notes",
+    "handle": "sproutNotes",
+    "version": "2.0.0",
+    "schemaVersion": "2.0.0",
+    "developer": "Barrel Strength",
+    "developerUrl": "https://barrelstrengthdesign.com",
+    "documentationUrl": "https://sprout.barrelstrengthdesign.com/craft-plugins/notes",
+    "changelogUrl": "https://raw.githubusercontent.com/BarrelStrength/sproutnotes/master/CHANGELOG.md",
+    "downloadUrl": "https://github.com/BarrelStrength/sproutnotes/archive/master.zip",
+    "class": "barrelstrength\\sproutnotes\\SproutNotes"
+  }
+}

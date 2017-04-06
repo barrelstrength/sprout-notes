@@ -1,0 +1,30 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: "Heading"|t('sproutNotes'),
+    name: 'heading',
+    value: widget.heading,
+    errors: widget.getErrors('heading')
+}) }}
+
+{{ forms.textareaField({
+    label: "Notes"|t('sproutNotes'),
+    name: 'notes',
+    class: 'sprout-notes redactor',
+    value: widget.notes,
+    errors: widget.getErrors('notes')
+}) }}
+
+{{ forms.selectField({
+  label: "Output As"|t,
+  id: 'output',
+  name: 'output',
+  options: widget.options,
+  value: (widget.output is defined) ? widget.output : '',
+}) }}
+
+<style type="text/css">
+  textarea.text.sprout-notes {
+    min-height: 200px;
+  }
+</style>

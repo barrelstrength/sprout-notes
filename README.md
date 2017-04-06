@@ -1,30 +1,26 @@
-Sprout Notes!
+Sprout Notes for Craft CMS
+=====================
 
-Here are some online resources you might find useful:
+Sometimes you just need to write a note!
 
+## Requirements
 
-Sprout Notes Docs
-------------------------------------------------------------
-Code examples, tags, common questions:
-http://sprout.barrelstrengthdesign.com/craft-plugins/notes
+This plugin requires Craft CMS 3.0.0-beta.1 or later.
 
+## Installation
 
-Sprout Notes Updates
-------------------------------------------------------------
-http://sprout.barrelstrengthdesign.com/craft-plugins/notes/updates
+To install the plugin, follow these instructions.
 
+1. Open your terminal and go to your Craft project:
 
-Sprout Notes Support
-------------------------------------------------------------
+        cd /path/to/project
 
-Via Craft Stack Exchange: Tag your questions with `plugin-sproutnotes`:
-https://craftcms.stackexchange.com/
+2. Then tell Composer to load the plugin:
 
-Via Email:
-Send us a note at: sprout@barrelstrengthdesign.com
+        php composer.phar require craftcms/mailgun
 
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Mailgun.
 
-Sprout Notes License Terms
-------------------------------------------------------------
-Use of Sprout Notes is subject to the license agreement available here:
-http://sprout.barrelstrengthdesign.com/license
+## Setup
+
+Once Mailgun is installed, go to Settings → Email, and change the “Transport Type” setting to “Mailgun”. Enter your domain name and Mailgun API Key (which you can get from your [domain overview](https://mailgun.com/app/domains) page) and click Save.
