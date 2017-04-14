@@ -1,6 +1,5 @@
-
 {% if widget.output == 'html' %}
-  {{ widget.notes | raw }}
+    {{ widget.notes | raw }}
 {% else %}
-  {{ widget.notes | markdown }}
+    {{ widget.notes | markdown }}
 {% endif %}

@@ -1,14 +1,14 @@
 {% import "_includes/forms" as forms %}
 
 {{ forms.textField({
-    label: "Heading"|t('sproutNotes'),
+    label: "Heading"|t('sproutnotes'),
     name: 'heading',
     value: widget.heading,
     errors: widget.getErrors('heading')
 }) }}
 
 {{ forms.textareaField({
-    label: "Notes"|t('sproutNotes'),
+    label: "Notes"|t('sproutnotes'),
     name: 'notes',
     class: 'sprout-notes redactor',
     value: widget.notes,
@@ -16,15 +16,15 @@
 }) }}
 
 {{ forms.selectField({
-  label: "Output As"|t,
-  id: 'output',
-  name: 'output',
-  options: widget.options,
-  value: (widget.output is defined) ? widget.output : '',
+    label: "Output As"|t,
+    id: 'output',
+    name: 'output',
+    options: widget.options,
+    value: (widget.output is defined) ? widget.output : '',
 }) }}
 
-<style type="text/css">
-  textarea.text.sprout-notes {
-    min-height: 200px;
-  }
-</style>
+{% includecss %}
+textarea.text.sprout-notes {
+min-height: 200px;
+}
+{% endincludecss %}

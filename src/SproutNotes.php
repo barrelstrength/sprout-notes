@@ -1,17 +1,19 @@
 <?php
+
 namespace barrelstrength\sproutnotes;
 
-use Craft;
+use craft\services\Dashboard;
 use yii\base\Event;
 use craft\events\RegisterComponentTypesEvent;
-use craft\services\Dashboard;
-
 use barrelstrength\sproutnotes\widgets\Notes as NotesWidget;
 
 class SproutNotes extends \craft\base\Plugin
 {
 	/**
 	 * Enable use of SproutNotes::$plugin-> in place of Craft::$app->
+	 *
+	 * Craft::$app->
+	 * SproutNotes::$plugin-> Plugin Object
 	 *
 	 * @var [type]
 	 */

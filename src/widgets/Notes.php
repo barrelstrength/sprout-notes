@@ -1,4 +1,5 @@
 <?php
+
 namespace barrelstrength\sproutnotes\widgets;
 
 use Craft;
@@ -29,7 +30,7 @@ class Notes extends Widget
 	 */
 	public $options = [
 		'markdown' => 'Markdown',
-		'html' => 'HTML'
+		'html' => 'HTML',
 	];
 
 	/**
@@ -37,7 +38,7 @@ class Notes extends Widget
 	 */
 	public static function displayName(): string
 	{
-		return Craft::t('sproutNotes', 'Sprout Notes');
+		return Craft::t('sproutnotes', 'Sprout Notes');
 	}
 
 	/**
@@ -53,7 +54,7 @@ class Notes extends Widget
 	 */
 	public function getTitle(): string
 	{
-		return parent::getTitle();
+		return $this->heading;
 	}
 
 	/**
@@ -61,6 +62,8 @@ class Notes extends Widget
 	 */
 	public function getBodyHtml()
 	{
+		Craft::info('Widget body loading... ', __METHOD__);
+
 		return Craft::$app->getView()->renderTemplate('sproutnotes/widgets/Notes/notes',
 			[
 				'widget' => $this
