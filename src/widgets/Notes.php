@@ -62,9 +62,7 @@ class Notes extends Widget
 	 */
 	public function getBodyHtml()
 	{
-		Craft::info('Widget body loading... ', __METHOD__);
-
-		return Craft::$app->getView()->renderTemplate('sproutnotes/widgets/Notes/notes',
+		return Craft::$app->getView()->renderTemplate('sproutnotes/widgets/notes/notes',
 			[
 				'widget' => $this
 			]);
@@ -75,7 +73,7 @@ class Notes extends Widget
 	 */
 	public function getSettingsHtml()
 	{
-		return Craft::$app->getView()->renderTemplate('sproutnotes/widgets/Notes/settings',
+		return Craft::$app->getView()->renderTemplate('sproutnotes/widgets/notes/settings',
 			[
 				'widget' => $this
 			]);
