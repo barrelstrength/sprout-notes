@@ -38,7 +38,7 @@ class Notes extends Widget
 	 */
 	public static function displayName(): string
 	{
-		return Craft::t('sproutnotes', 'Sprout Notes');
+		return Craft::t('sprout-notes', 'Sprout Notes');
 	}
 
 	/**
@@ -62,7 +62,7 @@ class Notes extends Widget
 	 */
 	public function getBodyHtml()
 	{
-		return Craft::$app->getView()->renderTemplate('sproutnotes/widgets/notes/notes',
+		return Craft::$app->getView()->renderTemplate('sprout-notes/widgets/Notes/notes',
 			[
 				'widget' => $this
 			]);
@@ -73,7 +73,7 @@ class Notes extends Widget
 	 */
 	public function getSettingsHtml()
 	{
-		return Craft::$app->getView()->renderTemplate('sproutnotes/widgets/notes/settings',
+		return Craft::$app->getView()->renderTemplate('sprout-notes/widgets/Notes/settings',
 			[
 				'widget' => $this
 			]);
