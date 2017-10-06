@@ -13,7 +13,7 @@
   },
   "extra": {
     "name": "Sprout Notes",
-    "handle": "sproutNotes",
+    "handle": "sprout-notes",
     "version": "2.0.0",
     "schemaVersion": "2.0.0",
     "developer": "Barrel Strength",
