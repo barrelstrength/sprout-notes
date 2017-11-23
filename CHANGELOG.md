@@ -1,6 +1,19 @@
 Changelog
 =========
 
+## 2.0.4 - 2017-11-22
+
+### Improved
+- Removed unused code block
+
+### Fixed
+- Fixed code example in docs
+
+## 2.0.3 - 2017-11-22
+
+### Improved
+- Updated `composer.json` info
+
 ## 2.0.2 - 2017-11-22
 
 ### Improved
