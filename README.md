@@ -33,6 +33,6 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require barrelstrength/sproutnotes
+        composer require barrelstrength/sprout-notes
 
 3. In the Control Panel, go to _Settings → Plugins_ and click the “Install” button for Sprout Notes.
