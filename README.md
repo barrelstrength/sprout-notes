@@ -3,7 +3,7 @@ Sprout Notes
 
 Sometimes you just need to write a note!
 
-Sprout Notes adds a Note dashboard widget. Create a note for something you want to remember – or something you want to forget!
+Sprout Notes adds a _Notes_ dashboard widget. Create a note for something you want to remember – or something you want to forget!
 
 ----
 
@@ -12,7 +12,7 @@ Sprout Notes adds a Note dashboard widget. Create a note for something you want 
 Once installed, a user can add any number of _Notes_ widgets to their dashboard.
 
 1. Go to your Craft Dashboard
-2. Select _New Widget → Note_
+2. Select _New Widget → Notes_
 3. The possibilities are endless!
 
 ----
