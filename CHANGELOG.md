@@ -1,6 +1,11 @@
 Changelog
 =========
 
+## 2.0.2 - 2017-11-22
+
+### Improved
+- Updated composer require syntax to `barrelstrength/sprout-notes`
+
 ## 2.0.1 - 2017-11-22
 
 ### Added
