@@ -39,7 +39,7 @@ class SproutNotes extends Plugin
 
         self::$app = $this;
 
-        Event::on(Dashboard::class, Dashboard::EVENT_REGISTER_WIDGET_TYPES, function (RegisterComponentTypesEvent $event) {
+        Event::on(Dashboard::class, Dashboard::EVENT_REGISTER_WIDGET_TYPES, function(RegisterComponentTypesEvent $event) {
             $event->types[] = NotesWidget::class;
         });
     }
