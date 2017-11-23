@@ -38,7 +38,7 @@ class Notes extends Widget
 	 */
 	public static function displayName(): string
 	{
-		return Craft::t('sprout-notes', 'Sprout Notes');
+		return Craft::t('sprout-notes', 'Note');
 	}
 
 	/**
