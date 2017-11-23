@@ -1,13 +1,29 @@
-Sprout Notes for Craft CMS
-=====================
+Sprout Notes
+===================
 
 Sometimes you just need to write a note!
 
-## Requirements
+Sprout Notes adds a Note dashboard widget. Create a note for something you want to remember – or something you want to forget!
 
-This plugin requires Craft CMS 3.0.0-beta.1 or later.
+----
 
-## Installation
+## Usage
+
+Once installed, a user can add any number of _Notes_ widgets to their dashboard.
+
+1. Go to your Craft Dashboard
+2. Select _New Widget → Note_
+3. The possibilities are endless!
+
+----
+
+## Getting Started 
+
+### Requirements
+
+This plugin requires Craft CMS 3.0.0-RC1 or later.
+
+### Installation
 
 To install the plugin, follow these instructions.
 
@@ -19,8 +35,4 @@ To install the plugin, follow these instructions.
 
         composer require barrelstrength/sproutnotes
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Mailgun.
-
-## Setup
-
-Once Mailgun is installed, go to Settings → Email, and change the “Transport Type” setting to “Mailgun”. Enter your domain name and Mailgun API Key (which you can get from your [domain overview](https://mailgun.com/app/domains) page) and click Save.
+3. In the Control Panel, go to _Settings → Plugins_ and click the “Install” button for Sprout Notes.
