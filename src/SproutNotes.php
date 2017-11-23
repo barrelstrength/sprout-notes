@@ -19,7 +19,18 @@ class SproutNotes extends \craft\base\Plugin
 	 */
 	public static $plugin;
 
-	public function init()
+    /**
+     * @var string
+     */
+    public $changelogUrl = 'https://raw.githubusercontent.com/barrelstrength/sprout-notes/master/CHANGELOG.md';
+
+    /**
+     * @var string
+     */
+    public $downloadUrl = 'https://github.com/barrelstrength/sprout-notes/archive/master.zip';
+
+
+    public function init()
 	{
 		parent::init();
 
