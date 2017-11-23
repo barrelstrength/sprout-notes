@@ -4,20 +4,21 @@ namespace barrelstrength\sproutnotes;
 
 use craft\services\Dashboard;
 use yii\base\Event;
+use craft\base\Plugin;
 use craft\events\RegisterComponentTypesEvent;
 use barrelstrength\sproutnotes\widgets\Notes as NotesWidget;
 
-class SproutNotes extends \craft\base\Plugin
+class SproutNotes extends Plugin
 {
-	/**
-	 * Enable use of SproutNotes::$plugin-> in place of Craft::$app->
-	 *
-	 * Craft::$app->
-	 * SproutNotes::$plugin-> Plugin Object
-	 *
-	 * @var [type]
-	 */
-	public static $plugin;
+    /**
+     * Enable use of SproutNotes::$app-> in place of Craft::$app->
+     *
+     * Craft::$app->
+     * SproutNotes::$app-> Plugin Object
+     *
+     * @var $app SproutNotes
+     */
+    public static $app;
 
     /**
      * @var string
@@ -29,15 +30,17 @@ class SproutNotes extends \craft\base\Plugin
      */
     public $downloadUrl = 'https://github.com/barrelstrength/sprout-notes/archive/master.zip';
 
-
+    /**
+     * @inheritdoc
+     */
     public function init()
-	{
-		parent::init();
+    {
+        parent::init();
 
-		self::$plugin = $this;
+        self::$app = $this;
 
-		Event::on(Dashboard::class, Dashboard::EVENT_REGISTER_WIDGET_TYPES, function(RegisterComponentTypesEvent $event) {
-			$event->types[] = NotesWidget::class;
-		});
-	}
+        Event::on(Dashboard::class, Dashboard::EVENT_REGISTER_WIDGET_TYPES, function (RegisterComponentTypesEvent $event) {
+            $event->types[] = NotesWidget::class;
+        });
+    }
 }
