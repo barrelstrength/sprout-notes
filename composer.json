@@ -3,6 +3,26 @@
   "description": "Sometimes you just need to write a note!",
   "version": "2.0.2",
   "type": "craft-plugin",
+  "keywords": [
+    "craftcms",
+    "widget",
+    "dashboard",
+    "notes"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Barrel Strength",
+      "homepage": "https://www.barrelstrengthdesign.com/"
+    }
+  ],
+  "support": {
+    "email": "support@barrelstrengthdesign.com",
+    "issues": "https://github.com/barrelstrength/sprout-notes/issues?state=open",
+    "source": "https://github.com/barrelstrength/sprout-notes",
+    "docs": "https://sprout.barrelstrengthdesign.com/craft-plugins/notes/docs",
+    "rss": "https://github.com/barrelstrength/sprout-notes/commits/v2.atom"
+  },
   "require": {
     "craftcms/cms": "^3.0.0-beta"
   },
@@ -14,13 +34,12 @@
   "extra": {
     "name": "Sprout Notes",
     "handle": "sprout-notes",
-    "version": "2.0.2",
     "schemaVersion": "2.0.0",
     "developer": "Barrel Strength",
     "developerUrl": "https://barrelstrengthdesign.com",
     "documentationUrl": "https://sprout.barrelstrengthdesign.com/craft-plugins/notes",
-    "changelogUrl": "https://raw.githubusercontent.com/BarrelStrength/sproutnotes/master/CHANGELOG.md",
-    "downloadUrl": "https://github.com/BarrelStrength/sproutnotes/archive/master.zip",
+    "changelogUrl": "https://raw.githubusercontent.com/barrelstrength/sprout-notes/master/CHANGELOG.md",
+    "downloadUrl": "https://github.com/barrelstrength/sprout-notes/archive/master.zip",
     "class": "barrelstrength\\sproutnotes\\SproutNotes"
   }
 }
