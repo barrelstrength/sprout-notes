@@ -34,3 +34,17 @@ Changelog
 
 ### Added
 - Initial Craft 3 release
+
+## 1.0.0 - 2015-12-02
+
+### Added
+- Added Plugin icon
+- Added Plugin description
+- Added link to documentation
+- Added link to plugin settings
+- Added link to release feed
+
+## 0.6.0 - 2014-01-10
+
+### Added
+- Public Beta
