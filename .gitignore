@@ -12,4 +12,5 @@ logs/*
 *.tmproj
 *.tmproject
 Thumbs.db
+composer.lock
 phpunit.phar
