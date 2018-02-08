@@ -2,6 +2,7 @@
 
 namespace barrelstrength\sproutnotes\widgets;
 
+use barrelstrength\sproutbase\web\assets\sproutfields\notes\QuillAsset;
 use Craft;
 use craft\base\Widget;
 
@@ -68,13 +69,19 @@ class Notes extends Widget
     public function getSettingsHtml()
     {
         $this->options = [
+            'richText' =>  Craft::t('sprout-notes', 'Rich Text'),
             'markdown' => Craft::t('sprout-notes', 'Markdown'),
             'html' => Craft::t('sprout-notes', 'HTML')
         ];
 
-        return Craft::$app->getView()->renderTemplate('sprout-notes/widgets/Notes/settings',
-            [
-                'widget' => $this
-            ]);
+        $view = Craft::$app->getView();
+        $namespace = $view->getNamespace();
+        $view->registerAssetBundle(QuillAsset::class);
+
+        return $view->renderTemplate('sprout-notes/widgets/Notes/settings', [
+                'widget' => $this,
+                'namespace' => $namespace
+            ]
+        );
     }
 }
