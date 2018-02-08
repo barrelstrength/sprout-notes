@@ -1,0 +1,99 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: "Heading"|t('sprout-notes'),
+    name: 'heading',
+    value: widget.heading,
+    errors: widget.getErrors('heading')
+}) }}
+
+{{ forms.selectField({
+    label: "Output As"|t('sprout-notes'),
+    id: 'output',
+    name: 'output',
+    options: widget.options,
+    value: (widget.output is defined) ? widget.output : '',
+}) }}
+
+<div id="textarea-wrapper" class="hidden">
+    {{ forms.textareaField({
+        label: "Notes"|t('sprout-notes'),
+        name: 'notes',
+        id: 'notes-textarea',
+        class: 'sprout-notes',
+        value: widget.notes,
+        errors: widget.getErrors('notes')
+    }) }}
+</div>
+
+<div id="quill-wrapper" class="hidden">
+    <div class="field">
+        <div class="heading">
+            <label for="quill">Notes</label>
+        </div>
+        <div class="text sproutnotes fullwidth quill-editor" id="notes-quill">{{ widget.notes|raw }}</div>
+    </div>
+</div>
+
+
+
+{% css %}
+    textarea.text.sprout-notes {
+        min-height: 200px;
+    }
+    .quill-editor {
+        height: 160px;
+    }
+{% endcss %}
+
+{% js %}
+$(document).ready(function() {
+    var $quillWrapper = $("#{{ namespace }}-quill-wrapper");
+    var textareaInput = $("#{{ namespace }}-notes-textarea");
+    var initSelectValue = $("#{{ namespace }}-output").val();
+    var $textareaWrapper = $("#{{ namespace }}-textarea-wrapper");
+
+    var quill = new Quill('#{{ namespace }}-notes-quill', {
+        bounds: ".quill-editor",
+            modules: {
+                toolbar: [
+                    [{ header: [1, 2, false] }],
+                    ['bold', 'italic', 'underline', 'link'],
+                    [{ 'list': 'ordered'}, { 'list': 'bullet' }]
+                ]
+            },
+        theme: 'snow'
+    });
+
+    quill.on('text-change', function(delta) {
+        textareaInput.val(quill.root.innerHTML);
+    });
+
+    if (initSelectValue == "richText") {
+        $quillWrapper.removeClass('hidden');
+    }
+    else{
+        $textareaWrapper.removeClass('hidden');
+    }
+
+    $("#{{ namespace }}-output").on('change', function() {
+
+        var textareaType = $(this).val();
+
+        if (textareaType == "richText") {
+            $textareaWrapper.addClass('hidden');
+            $quillWrapper.removeClass('hidden');
+        }
+        else
+        {
+            if (!$quillWrapper.hasClass('hidden'))
+            {
+                $quillWrapper.addClass('hidden');
+            }
+
+            $textareaWrapper.removeClass('hidden');
+        }
+    });
+});
+
+{% endjs %}
