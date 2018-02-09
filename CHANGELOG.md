@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.7 - 2018-01-08
+
+## Added
+- Updated Sprout Base composer dependency
+
 ## 2.0.6 - 2018-01-08
 
 ## Added
