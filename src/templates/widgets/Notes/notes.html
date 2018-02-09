@@ -4,3 +4,9 @@
     {{ widget.notes | markdown }}
 {% endif %}
 
+{% css %}
+    #widget{{ widget.id }} ul {
+        list-style-type: disc;
+        padding-left: 40px;
+    }
+{% endcss %}
