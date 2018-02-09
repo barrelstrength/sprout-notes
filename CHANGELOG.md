@@ -1,8 +1,13 @@
 # Changelog
 
-## 2.0.7 - 2018-01-08
+## 2.0.8 - 2018-01-08
 
 ## Added
+- Added Sprout Base registration
+
+## 2.0.7 - 2018-01-08
+
+## Changed
 - Updated Sprout Base composer dependency
 
 ## 2.0.6 - 2018-01-08
