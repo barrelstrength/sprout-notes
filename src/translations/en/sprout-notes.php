@@ -1,10 +1,11 @@
 <?php
 
 return [
-    'Heading' => 'Heading',
-    'Sprout Notes' => 'Sprout Notes',
     'HTML' => 'HTML',
+    'Heading' => 'Heading',
     'Markdown' => 'Markdown',
     'Notes' => 'Notes',
-    'Output As' => 'Output As'
+    'Rich Text' => 'Rich Text',
+    'Format' => 'Format',
+    'Note' => 'Note'
 ];
