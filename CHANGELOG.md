@@ -1,5 +1,18 @@
-Changelog
-=========
+# Changelog
+
+## 2.0.5 - 2018-01-08
+
+## Added
+- Added Rich Text Note
+- Added basic styles for unordered lists in Notes
+- Added plugin translations
+
+## Changed
+- Updates Widget name Notes => Note
+- Updates plugin icon
+
+## Removed
+- Removed Redactor
 
 ## 2.0.4 - 2017-11-22
 
@@ -44,7 +57,7 @@ Changelog
 - Added link to plugin settings
 - Added link to release feed
 
-## 0.6.0 - 2014-01-10
+## 0.6.0 - 2014-01-11
 
 ### Added
 - Public Beta
