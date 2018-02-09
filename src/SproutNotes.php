@@ -2,6 +2,7 @@
 
 namespace barrelstrength\sproutnotes;
 
+use barrelstrength\sproutbase\SproutBaseHelper;
 use craft\services\Dashboard;
 use yii\base\Event;
 use craft\base\Plugin;
@@ -16,6 +17,8 @@ class SproutNotes extends Plugin
     public function init()
     {
         parent::init();
+
+        SproutBaseHelper::registerModule();
 
         Event::on(Dashboard::class, Dashboard::EVENT_REGISTER_WIDGET_TYPES, function(RegisterComponentTypesEvent $event) {
             $event->types[] = NotesWidget::class;
