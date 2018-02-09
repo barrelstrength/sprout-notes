@@ -7,14 +7,6 @@
     errors: widget.getErrors('heading')
 }) }}
 
-{{ forms.selectField({
-    label: "Output As"|t('sprout-notes'),
-    id: 'output',
-    name: 'output',
-    options: widget.options,
-    value: (widget.output is defined) ? widget.output : '',
-}) }}
-
 <div id="textarea-wrapper" class="hidden">
     {{ forms.textareaField({
         label: "Notes"|t('sprout-notes'),
@@ -35,6 +27,13 @@
     </div>
 </div>
 
+{{ forms.selectField({
+    label: "Format"|t('sprout-notes'),
+    id: 'output',
+    name: 'output',
+    options: widget.options,
+    value: (widget.output is defined) ? widget.output : '',
+}) }}
 
 
 {% css %}
@@ -44,9 +43,13 @@
     .quill-editor {
         height: 160px;
     }
+    .quill-editor.ql-container {
+        padding: 0;
+    }
 {% endcss %}
 
 {% js %}
+
 $(document).ready(function() {
     var $quillWrapper = $("#{{ namespace }}-quill-wrapper");
     var textareaInput = $("#{{ namespace }}-notes-textarea");
@@ -54,14 +57,13 @@ $(document).ready(function() {
     var $textareaWrapper = $("#{{ namespace }}-textarea-wrapper");
 
     var quill = new Quill('#{{ namespace }}-notes-quill', {
-        bounds: ".quill-editor",
-            modules: {
-                toolbar: [
-                    [{ header: [1, 2, false] }],
-                    ['bold', 'italic', 'underline', 'link'],
-                    [{ 'list': 'ordered'}, { 'list': 'bullet' }]
-                ]
-            },
+        bounds: "#{{ namespace }}-quill-wrapper .quill-editor",
+        modules: {
+            toolbar: [
+                ['bold', 'italic', 'link'],
+                [{ 'list': 'ordered'}, { 'list': 'bullet' }]
+            ]
+        },
         theme: 'snow'
     });
 
