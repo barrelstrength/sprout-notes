@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.9 - 2018-03-03
+
+## Changed
+- Updates spacing of UL tags in Rich Text Editor
+- Updates Sprout Base require statement
+
 ## 2.0.8 - 2018-01-08
 
 ## Added
