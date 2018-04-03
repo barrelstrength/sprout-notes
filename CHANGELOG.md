@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.0 - 2018-04-03
+
+## Changed
+- Fixed potential conflicts with svg icon styles
+
 ## 2.0.9 - 2018-03-03
 
 ## Changed
