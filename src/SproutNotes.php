@@ -3,7 +3,9 @@
 namespace barrelstrength\sproutnotes;
 
 use barrelstrength\sproutbase\SproutBaseHelper;
+use craft\helpers\Json;
 use craft\services\Dashboard;
+use GuzzleHttp\Client;
 use yii\base\Event;
 use craft\base\Plugin;
 use craft\events\RegisterComponentTypesEvent;
