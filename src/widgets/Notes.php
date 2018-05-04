@@ -2,7 +2,7 @@
 
 namespace barrelstrength\sproutnotes\widgets;
 
-use barrelstrength\sproutbase\web\assets\sproutfields\notes\QuillAsset;
+use barrelstrength\sproutbase\sproutfields\web\assets\notes\QuillAsset;
 use Craft;
 use craft\base\Widget;
 
