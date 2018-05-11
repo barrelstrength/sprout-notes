@@ -14,6 +14,11 @@ use barrelstrength\sproutnotes\widgets\Notes as NotesWidget;
 class SproutNotes extends Plugin
 {
     /**
+     * @var string
+     */
+    public $schemaVersion = '2.0.0';
+
+    /**
      * @inheritdoc
      */
     public function init()
