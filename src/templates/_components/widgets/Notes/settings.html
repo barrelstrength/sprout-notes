@@ -89,6 +89,9 @@ $(document).ready(function() {
         $quillWrapper.removeClass('hidden');
     }
     else{
+        // Add hidden class to quillWrapper here instead of directly on
+        // HTML element to avoid a display issue when editing Notes widget
+        $quillWrapper.addClass('hidden');
         $textareaWrapper.removeClass('hidden');
     }
 
