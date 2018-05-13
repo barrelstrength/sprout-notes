@@ -2,7 +2,7 @@
 
 namespace barrelstrength\sproutnotes\widgets;
 
-use barrelstrength\sproutbase\app\fields\web\assets\notes\QuillAsset;
+use barrelstrength\sproutnotes\web\assets\quill\QuillAsset;
 use Craft;
 use craft\base\Widget;
 
@@ -54,10 +54,13 @@ class Notes extends Widget
 
     /**
      * @inheritdoc
+     *
+     * @throws \Twig_Error_Loader
+     * @throws \yii\base\Exception
      */
     public function getBodyHtml()
     {
-        return Craft::$app->getView()->renderTemplate('sprout-notes/widgets/Notes/notes',
+        return Craft::$app->getView()->renderTemplate('sprout-notes/_components/widgets/Notes/notes',
             [
                 'widget' => $this
             ]);
@@ -65,11 +68,15 @@ class Notes extends Widget
 
     /**
      * @inheritdoc
+     *
+     * @throws \Twig_Error_Loader
+     * @throws \yii\base\Exception
+     * @throws \yii\base\InvalidConfigException
      */
     public function getSettingsHtml()
     {
         $this->options = [
-            'richText' =>  Craft::t('sprout-notes', 'Rich Text'),
+            'richText' => Craft::t('sprout-notes', 'Rich Text'),
             'markdown' => Craft::t('sprout-notes', 'Markdown'),
             'html' => Craft::t('sprout-notes', 'HTML')
         ];
@@ -78,7 +85,7 @@ class Notes extends Widget
         $namespace = $view->getNamespace();
         $view->registerAssetBundle(QuillAsset::class);
 
-        return $view->renderTemplate('sprout-notes/widgets/Notes/settings', [
+        return $view->renderTemplate('sprout-notes/_components/widgets/Notes/settings', [
                 'widget' => $this,
                 'namespace' => $namespace
             ]
