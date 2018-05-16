@@ -1,7 +1,7 @@
 {
   "name": "barrelstrength/sprout-notes",
   "description": "Sometimes you just need to write a note!",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "type": "craft-plugin",
   "keywords": [
     "craftcms",

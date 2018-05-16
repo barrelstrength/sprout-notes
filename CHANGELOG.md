@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.2.0 - 2018-04-03
+
+### Added 
+- Added Quill library
+- Added @sproutnoteslib alias
+- Updates minimum Craft requirement to v3.0.0
+
+### Changed
+- Updated application folder structure
+- Moved schema and component definitions to Plugin class
+- Removed Sprout Base dependency
+
+### Fixed
+- Fixed display issue where widget settings could appear behind another widget 
+- Fixed bug where Rich Text textarea would display the second time you edited a widget even when alternate output methods were selected
+
 ## 2.1.0 - 2018-04-03
 
 ## Changed
