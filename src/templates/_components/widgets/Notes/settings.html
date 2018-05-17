@@ -18,12 +18,16 @@
     }) }}
 </div>
 
-<div id="quill-wrapper" class="hidden">
+<div id="quill-wrapper">
     <div class="field">
         <div class="heading">
             <label for="quill">Notes</label>
         </div>
-        <div class="text sproutnotes fullwidth quill-editor" id="notes-quill">{{ widget.notes|raw }}</div>
+        <div class="input sprout-notes-quill-editor-wrapper">
+            <div class="text sproutnotes fullwidth quill-editor" id="notes-quill">
+                {{ widget.notes|raw }}
+            </div>
+        </div>
     </div>
 </div>
 
@@ -40,10 +44,16 @@
     textarea.text.sprout-notes {
         min-height: 200px;
     }
-    .quill-editor {
-        height: 160px;
+    .sprout-notes-quill-editor-wrapper {
+        padding-top: 30px;
     }
-    .quill-editor.ql-container {
+    .sprout-notes-quill-editor-wrapper .ql-toolbar {
+        margin-top: -30px;
+    }
+    #{{ namespace }}-quill-wrapper .quill-editor {
+        min-height: 200px;
+    }
+    #{{ namespace }} .quill-editor.ql-container {
         padding: 0;
     }
     body .ql-editor ol,
@@ -79,6 +89,9 @@ $(document).ready(function() {
         $quillWrapper.removeClass('hidden');
     }
     else{
+        // Add hidden class to quillWrapper here instead of directly on
+        // HTML element to avoid a display issue when editing Notes widget
+        $quillWrapper.addClass('hidden');
         $textareaWrapper.removeClass('hidden');
     }
 
