@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.2.0 - 2018-04-03
+## 2.2.1 - 2018-04-03
 
 {warning} If you have more than one Sprout Plugin installed, to avoid errors use the 'Update All' option.
 
