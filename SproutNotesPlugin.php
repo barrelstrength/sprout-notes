@@ -15,7 +15,7 @@ class SproutNotesPlugin extends BasePlugin
 
 	public function getVersion()
 	{
-	  return '1.0.0';
+	  return '1.1.0';
 	}
 
 	public function getDeveloper()
@@ -35,7 +35,7 @@ class SproutNotesPlugin extends BasePlugin
 
 	public function getReleaseFeedUrl()
 	{
-	  return 'https://sprout.barrelstrengthdesign.com/craft-plugins/notes/releases.json';
+	  return 'https://raw.githubusercontent.com/barrelstrength/craft-sprout-notes/v1/releases.json';
 	}
 
 	public function hasCpSection()

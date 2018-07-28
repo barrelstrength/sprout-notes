@@ -11,7 +11,7 @@ http://sprout.barrelstrengthdesign.com/craft-plugins/notes
 
 Sprout Notes Updates
 ------------------------------------------------------------
-http://sprout.barrelstrengthdesign.com/craft-plugins/notes/updates
+https://sprout.barrelstrengthdesign.com/docs/support/changelog.html
 
 
 Sprout Notes Support
@@ -22,9 +22,3 @@ https://craftcms.stackexchange.com/
 
 Via Email:
 Send us a note at: sprout@barrelstrengthdesign.com
-
-
-Sprout Notes License Terms
-------------------------------------------------------------
-Use of Sprout Notes is subject to the license agreement available here:
-http://sprout.barrelstrengthdesign.com/license
