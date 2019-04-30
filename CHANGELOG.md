@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.3 - 2019-04-29
+
+## Changed
+- Updated icon
+- Updated library alias
+
 ## 2.2.2 - 2018-05-17
 
 ### Fixed

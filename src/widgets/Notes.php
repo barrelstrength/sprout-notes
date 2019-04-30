@@ -5,7 +5,16 @@ namespace barrelstrength\sproutnotes\widgets;
 use barrelstrength\sproutnotes\web\assets\quill\QuillAsset;
 use Craft;
 use craft\base\Widget;
+use Twig_Error_Loader as Twig_Error_LoaderAlias;
+use yii\base\Exception;
+use yii\base\InvalidConfigException;
 
+/**
+ *
+ * @property mixed  $bodyHtml
+ * @property mixed  $settingsHtml
+ * @property string $title
+ */
 class Notes extends Widget
 {
     /**
@@ -55,8 +64,8 @@ class Notes extends Widget
     /**
      * @inheritdoc
      *
-     * @throws \Twig_Error_Loader
-     * @throws \yii\base\Exception
+     * @throws Twig_Error_LoaderAlias
+     * @throws Exception
      */
     public function getBodyHtml()
     {
@@ -69,9 +78,9 @@ class Notes extends Widget
     /**
      * @inheritdoc
      *
-     * @throws \Twig_Error_Loader
-     * @throws \yii\base\Exception
-     * @throws \yii\base\InvalidConfigException
+     * @throws Twig_Error_LoaderAlias
+     * @throws Exception
+     * @throws InvalidConfigException
      */
     public function getSettingsHtml()
     {
