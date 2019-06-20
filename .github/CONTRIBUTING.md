@@ -1,3 +1,3 @@
 # Contributing to Sprout Plugins
 
-Please see the [Contributing](https://sprout.barrelstrengthdesign.com/docs/support/contributing.html) page in our documentation for details on contributing to Sprout.
+Please see the [Contributing](https://sprout.barrelstrengthdesign.com/docs/contributing.html) page in our documentation for details on contributing to Sprout.
