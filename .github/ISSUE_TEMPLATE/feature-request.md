@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for a new feature in Sprout.
+about: Suggest an idea for a new feature in Sprout
 ---
 
 ### The problem (description, use case, screenshots...)
