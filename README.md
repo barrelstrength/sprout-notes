@@ -4,6 +4,8 @@ Sometimes you just need to write a note!
 
 Sprout Notes adds a _Notes_ dashboard widget to Craft CMS. Create a note for something you want to remember – or something you want to forget!
 
+## Details
+
 - [Plugin Store](https://plugins.craftcms.com/sprout-notes)
 - [Documentation](https://sprout.barrelstrengthdesign.com/docs/notes/)
  
