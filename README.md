@@ -1,7 +1,8 @@
-
-<a href="https://sprout.barrelstrengthdesign.com" target="_blank">
-  <img src="https://s3.amazonaws.com/sprout.barrelstrengthdesign.com-assets/content/plugins/sprout-icon.svg" width="72" height="72">
-</a>
+<p align="center">
+    <a href="https://sprout.barrelstrengthdesign.com" target="_blank">
+      <img src="https://s3.amazonaws.com/sprout.barrelstrengthdesign.com-assets/content/plugins/sprout-icon.svg" width="72" height="72">
+    </a>
+</p>
 
 # Sprout Notes
 
