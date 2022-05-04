@@ -1,5 +1,13 @@
 # Sprout Notes
 
+## Status
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+In an effort to reduce the number of packages we publicly maintain, Sprout Notes will not be migrated to Craft 4. If you'd like to take the helm or take responsibility over maintaining the repository please reach out: [sprout@barrelstrengthdesign.com](mailto:sprout@barrelstrengthdesign.com).
+
+## Overview
+
 Sometimes you just need to write a note! Sprout Notes adds a _Note_ dashboard widget to Craft CMS. Create a note for something you want to remember – or something you want to forget!
 
 - [Documentation](https://sprout.barrelstrengthdesign.com/docs/notes/)
